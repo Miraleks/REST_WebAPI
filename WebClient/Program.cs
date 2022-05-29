@@ -42,7 +42,7 @@ namespace WebClient
 
                     string url = "https://localhost:5001/customers/" + text;
 
-                    var response = ConnectorToUrl.ConnectionToUrl(url);
+                    var response = ConnectorToUrl.GETConnectionToUrl(url);
 
                     Customer customer = JsonConvert.DeserializeObject<Customer>(response);
 

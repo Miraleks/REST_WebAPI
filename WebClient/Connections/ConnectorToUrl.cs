@@ -37,7 +37,7 @@ namespace WebClient.Connections
             return response;
         }
 
-        public static string ConnectionToUrl(string url)
+        public static string GETConnectionToUrl(string url)
         {
             var httpWebRequest = (HttpWebRequest)WebRequest.Create(url);
             var httpWebResponse = (HttpWebResponse)httpWebRequest.GetResponse();
