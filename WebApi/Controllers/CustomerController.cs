@@ -34,7 +34,7 @@ namespace WebApi.Controllers
         }
 
         [HttpPost("")]   
-        public Task<long> CreateCustomerAsync([FromQuery] string firstname, string lastname)
+        public Task<long> CreateCustomerAsync(string firstname, string lastname)
         
         {          
             var id = _customerRepository.AddCustomer(firstname, lastname);
